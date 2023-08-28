@@ -34,7 +34,7 @@ elif (secim == "2"):
     Linux Terminal
     """)
     site = input("Hedef Websitesini Girin: ")
-    os.system("nikto -h " + hedef)	
+    os.system("nikto -h " + site)	
     
 else:
     print("HATALI SEÇİM YAPTINIZ.PROGRAM KAPATILIYOR...")
