@@ -27,12 +27,14 @@ if (secim == "1"):
     os.system("git clone https://github.com/sullo/nikto")
     os.system("cd nikto/program")
     hedef = input("Hedef Websitesini Girin: ")
+    os.system("perl nikto.pl -h " + hedef)	
 
 elif (secim == "2"):
     print("""
     Linux Terminal
     """)
     site = input("Hedef Websitesini Girin: ")
+    os.system("nikto -h " + hedef)	
     
 else:
     print("HATALI SEÇİM YAPTINIZ.PROGRAM KAPATILIYOR...")
